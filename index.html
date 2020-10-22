@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="The Website of the Passerine Programming Language.">
+  <defer link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="hero">
+  <div class="content">
+    <!--     <div class="reasons"> -->
+    <div class="section">
+      <h1>Passerine <a href="github.com/vrtbl/passerine"><img src="https://raw.githubusercontent.com/vrtbl/passerine/master/Logo.png" class="inline"></img></a></h1>
+      <p>A small extensible programming language designed for concise expression with little code.</p>
+      <a href="#install">
+        <div class="button">
+          Download Passerine <code>0.7.2</code>
+        </div>
+      </a>
+    </div>
+
+    <!--       <div class="section">
+        <h2>Playground</h2>
+        <div class="button">
+          Run ↗
+        </div>
+        <div class="button">
+          For Loop ▿
+        </div>
+        <pre class="capped"><code>for each number in [3, 2, 1] {
+    print (number + "...")
+}
+
+print "Liftoff!"</code></pre>
+      </div> -->
+    <!--     </div> -->
+  </div>
+</div>
+<div class="why">
+  <div class="content">
+    <h1 class="section">Why Use Passerine?</h1>
+    <div class="reasons">
+      <div class="section">
+        <h2>Light and Fast</h2>
+        <p>Passerine’s entire implementation, from lexer to VM, is only ~2000 lines of code. Clever memory management techniques and an efficient interpreter means the runtime is even smaller. Passerine’s package manager, Aspen, helps manage everything for you, so development’s a breeze.</p>
+        <a href="https://github.com/vrtbl/passerine">
+          <div class=button>
+            The implementation ↗
+          </div>
+        </a>
+      </div>
+      <!--       <div class="section">
+        <h2>Highly Expressive</h2>
+        <p>A rich hygenic macro system and runtime introspection allows for a wide breadth of programmatic expression. Bend the langauge to your needs rather than bending your needs to the language.</p>
+        <div class=button>
+          The macro system ↗
+        </div>
+      </div> -->
+      <div class="section">
+        <h2>Easily Embeddable</h2>
+        <p>Passerine’s VM is written in Rust. A well-designed FFI allows each language to communicate with each other, allowing for rich usage of each language’s libraries. Passerine’s memory management technique, vaporization, also plays friendly with Rust’s borrow checker, allowing for easy integration.</p>
+        <a href="https://docs.rs/passerine/0.7.2/passerine/#embedding-passerine-in-rust">
+          <div class="button">
+            Integrating Rust and Passerine ↗
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="involved" id="install">
+  <div class="content">
+    <div class="section">
+      <h1>Get Involved!</h1>
+      <h2>Install</h2>
+      <p>Downloading Passerine is quick and easy. Just run the following in the shell of your choice:</p>
+      <pre><code>sh <(curl -sSf https://www.slightknack.dev/static/install.sh)</code></pre>
+      <p>This script just pulls the latest version of Passerine, builds it from source, and adds it to your <code>$PATH</code>. Give it a read before running it if you'd like!</p>
+      <p>In the future, we plan to distribute prebuilt binaries, but for now, both Git and Cargo are required.</p>
+      <h2>Learn</h2>
+      <p>Passerine has a bunch of great resources for getting started, and the Passerine community values witty, insightful, and helpful documentation. Check out some of the following resources to get started:</p>
+      <a href="https://discord.com/invite/yMhUyhw">
+        <div class="button">
+          Join the community Discord server ↗
+        </div>
+      </a>
+      <a href="https://docs.rs/passerine">
+        <div class="button">
+          Read the compiler documentation ↗
+        </div>
+      </a>
+      <h2>Contribute</h2>
+      <p>Passerine, as a language, can’t grow without your help. As we’re currently in an early stage of development, any and all feedback and contributions count. Passerine’s compiler values simplicity above all else, so it’s easy to start hacking on it — all you need are some basic Git, Rust, and Passerine skills, and you’re set.</p>
+      <a href="https://github.com/vrtbl">
+        <div class="button">
+          Passerine on Github ↗
+        </div>
+      </a>
+      <a href="https://github.com/vrtbl/aspen">
+        <div class="button">
+          Aspen on Github ↗
+        </div>
+      </a>
+      <a href="https://github.com/vrtbl/passerine/blob/master/CONTRIBUTING.md">
+        <div class="button">
+          Contribution Guidelines ↗
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="section">
+
+    <h2>'Tis not the end, 'tis but the beginning...</h2>
+    <a href="#install">
+      <div class="button">
+        Install Passerine <code>0.7.2</code>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="content">
+  <div class="section">
+    <blockquote>
+      <h3>Disclaimer</h3>
+      <p>Passerine is at an early stage of development. Although a lot's been done, there's still a lot to do. If you'd like to know about the current state of development, ping Isaac Clayton (<code>@slightknack#6992</code>) in the community Discord server.</p>
+    </blockquote>
+  </div>
+  <div class="reasons">
+    <p class="section">
+      <a href="https://github.com/vrtbl/passerine/blob/master/CONTRIBUTING.md">
+        Code of Conduct
+      </a>
+    </p>
+    <p class="section">
+      <a href="https://github.com/vrtbl/passerine/security">
+        Security
+      </a>
+    </p>
+    <p class="section"><a href="https://github.com/vrtbl/passerine/blob/master/LICENSE.txt">Legal</a></p>
+    <p class="section"><a href="https://github.com/vrtbl/vrtbl.github.io">Improve this page</a></p>
+  </div>
+</div>
+</body>
+</html>
