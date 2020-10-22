@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Work+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary: #4bbf8e;
+  --white: #feffff;
+  --light: #c7c7c7;
+  --dark: #676767;
+  --black: #161616;
+
+  --red: #fd4285;
+  --red-l: #fa7fac;
+  --yellow: #e5da72;
+  --yellow-l: #fff27f;
+  --blue: #0094d8;
+  --blue-l: #00bdff;
+  --purple: #9a37ff;
+  --purple-l: #bd9eff;
+  --cyan: #50b6d8;
+  --cyan-l: #5ed6fe;
+
+  --base: 15pt;
+  --chasm: 25pt;
+
+  --across: 800px;
+  --spacer: 3px;
+
+  --snappy: 0.15s ease-out;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--base);
+  font-family: "DM Serif Text";
+  line-height: 1.4;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-top: var(--chasm);
+  margin-bottom: var(--base);
+  font-weight: bold;
+  font-family: "Work Sans";
+}
+
+h1 {
+  font-weight: normal;
+  font-size: calc(var(--base) * 2 + 10pt);
+}
+h2 {
+  font-size: calc(var(--base) + 10pt);
+}
+h3 {
+  font-size: calc(var(--base) + 8pt);
+}
+h4 {
+  font-size: calc(var(--base) + 6pt);
+}
+h5 {
+  font-size: calc(var(--base) + 4pt);
+}
+h6 {
+  font-size: calc(var(--base) + 2pt);
+}
+
+p {
+  margin-top: var(--base);
+  margin-bottom: var(--base);
+}
+
+pre {
+  margin-top: var(--base);
+  margin-bottom: var(--base);
+  overflow: scroll;
+  padding: var(--base);
+  border: var(--spacer) solid var(--dark);
+  border-radius: var(--spacer);
+}
+
+code {
+  font-family: "DM Mono";
+  font-size: 0.9em;
+  padding: var(--spacer);
+  border-radius: var(--spacer);
+}
+
+pre code {
+  white-space: pre;
+  background: none;
+  padding: 0;
+  border-radius: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  filter: drop-shadow(0 0 0 none);
+  transition: color var(--snappy), filter var(--snappy);
+}
+
+a:hover {
+  color: inherit;
+  filter: drop-shadow(0 0 var(--base) var(--primary));
+}
+
+blockquote {
+  margin: 0;
+  margin-top: var(--base);
+  margin-bottom: var(--base);
+  font-style: italic;
+  padding-left: var(--base);
+  border-left: var(--spacer) solid var(--primary);
+}
+
+ol,
+ul {
+  padding-left: var(--chasm);
+}
+
+ul {
+  list-style: circle outside none;
+}
+
+ol {
+  list-style: decimal outside none;
+}
+
+li {
+  margin-top: var(--spacer);
+  margin-bottom: var(--spacer);
+}
+
+table {
+  margin: var(--base);
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+thead {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+}
+
+tr {
+  border-top: var(--spacer) solid var(--dark);
+}
+
+thead tr {
+  border-top: none;
+}
+
+th,
+td {
+  padding: var(--spacer);
+  padding-left: var(--base);
+  padding-right: var(--base);
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+/* -- structural -- */
+
+.content {
+  margin: auto;
+  padding: var(--base);
+  padding-bottom: var(--chasm);
+  max-width: var(--across);
+}
+
+.reasons {
+  display: flex;
+  flex-direction: row;
+}
+
+.reasons > * {
+  width: 50%;
+}
+
+.section {
+  margin-left: var(--base);
+  margin-right: var(--base);
+}
+
+.capped {
+  max-height: 50vh;
+}
+
+@media (max-width: 700px) {
+  .reasons {
+    flex-direction: column;
+  }
+
+  .reasons > * {
+    width: auto;
+  }
+}
+
+.why {
+  color: var(--black);
+  background-color: var(--purple-l);
+}
+
+.involved {
+  color: var(--black);
+  background-color: var(--yellow-l);
+}
+
+.button {
+  margin-top: var(--spacer);
+  margin-bottom: var(--spacer);
+  padding: calc(var(--base) / 2);
+  padding-left: var(--base);
+  padding-right: var(--base);
+  background-color: var(--primary);
+  color: var(--black);
+  border-radius: var(--spacer);
+  display: inline-block;
+  transition: color var(--snappy), background-color var(--snappy);
+}
+
+.involved .button,
+.why .button {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.button:hover {
+  color: var(--primary);
+  background-color: var(--black);
+}
+
+.involved .button:hover,
+.why .button:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.inline {
+  vertical-align: -15%;
+  height: 1em;
+}
