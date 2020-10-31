@@ -10,32 +10,46 @@
 <body>
 <div class="hero">
   <div class="content">
-    <!--     <div class="reasons"> -->
-    <div class="section">
-      <h1>Passerine <a href="https://github.com/vrtbl/passerine"><img src="https://raw.githubusercontent.com/vrtbl/passerine/master/Logo.png" class="inline"></img></a></h1>
-      <h3>A small extensible programming language designed for concise expression with little code.</h3>
-      <a href="#install">
-        <div class="button">
-          Download Passerine <code>0.7.2</code>
-        </div>
-      </a>
-    </div>
+    <div class="reasons">
+      <div class="section">
+        <h1>Passerine <a href="https://github.com/vrtbl/passerine"><img src="https://raw.githubusercontent.com/vrtbl/passerine/master/Logo.png" class="inline"></img></a></h1>
+        <h3>A small extensible programming language designed for concise expression with little code.</h3>
+        <a href="#install">
+          <div class="button">
+            Download Passerine <code>0.7.2</code>
+          </div>
+        </a>
+      </div>
 
-    <!--       <div class="section">
-        <h2>Playground</h2>
-        <div class="button">
+      <div class="section">
+        <h2>Example</h2>
+<!--         <div class="button">
           Run ↗
         </div>
         <div class="button">
           For Loop ▿
-        </div>
-        <pre class="capped"><code>for each number in [3, 2, 1] {
+        </div> -->
+        <pre class="capped"><code>syntax 'for var 'in list do {
+    body = var -> do
+
+    loop = remaining -> {
+        body remaining.head
+        match remaining.tail -> [
+            Some more -> loop more,
+            None      -> (),
+        ]
+    }
+
+    loop list
+}
+
+for number in [1, 2, 3].reverse {
     print (number + "...")
 }
 
 print "Liftoff!"</code></pre>
-      </div> -->
-    <!--     </div> -->
+      </div>
+    </div>
   </div>
 </div>
 <div class="why">
@@ -51,13 +65,13 @@ print "Liftoff!"</code></pre>
           </div>
         </a>
       </div>
-      <!--       <div class="section">
+      <div class="section">
         <h2>Highly Expressive</h2>
         <p>A rich hygenic macro system and runtime introspection allows for a wide breadth of programmatic expression. Bend the langauge to your needs rather than bending your needs to the language.</p>
         <div class=button>
-          The macro system ↗
+          Macros currently WIP ╳
         </div>
-      </div> -->
+      </div>
       <div class="section">
         <h2>Easily Embeddable</h2>
         <p>Passerine’s VM is written in Rust. A well-designed FFI allows each language to communicate with each other, allowing for rich usage of each language’s libraries. Passerine’s memory management technique, vaporization, also plays friendly with Rust’s borrow checker, allowing for easy integration.</p>
