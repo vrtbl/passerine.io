@@ -88,7 +88,7 @@ main() {
     printf "\n"
 
     printf "Installing the Aspen binary. This may take a minute:\n\n"
-    build "Aspen" "aspen" "passerine-aspen" || return 1
+    build "Aspen" "aspen" "aspen" || return 1
     printf "\n"
 
     printf "Hooray! Passerine and Aspen have been installed. To create and run\n"
