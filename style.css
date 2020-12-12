@@ -11,14 +11,14 @@
   --across: 1000px;
   --spacer: 3px;
 
-  --snappy: 0.15s ease-out;
+  --snappy: 0.25s ease-in-out;
 }
 
 body {
   background-color: var(--black);
   color: var(--white);
   font-size: var(--base);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Work Sans","Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   line-height: 1.4;
   overflow-x: hidden;
@@ -34,8 +34,8 @@ h6 {
   line-height: 1.2;
   margin-top: var(--chasm);
   margin-bottom: var(--base);
-  font-weight: bold;
-  font-family: "Work Sans";
+  /* font-weight: bold;
+  font-family: "Work Sans"; */
 }
 
 h1 {
@@ -219,15 +219,22 @@ strong {
   color: var(--black);
   border-radius: var(--spacer);
   display: inline-block;
-  transition: color var(--snappy), background-color var(--snappy);
+  transition: color var(--snappy), background-color var(--snappy), border var(--snappy);
 }
 
 .button:hover {
+  /* border: 5px var(--black) solid; */
   color: var(--primary);
   background-color: var(--black);
+  
 }
 
 .inline {
   vertical-align: -15%;
   height: 1em;
+}
+
+.inline:hover {
+  color: inherit;
+  filter: none;
 }
