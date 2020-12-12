@@ -7,7 +7,7 @@
   "author": "The Passerine Authors",
   "license": "MIT",
   "private": false,
-  "dependencies": {
+  "devDependencies": {
     "live-server": "^1.2.1"
   }
 }
