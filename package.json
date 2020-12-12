@@ -1,0 +1,13 @@
+{
+  "name": "passerine.io",
+  "version": "1.0.0",
+  "description": "The website for the Passerine Programming Language",
+  "main": "index.html",
+  "repository": "https://github.com/vrtbl/passerine.io.git",
+  "author": "The Passerine Authors",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
