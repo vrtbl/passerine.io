@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Work+Sans:wght@400;700;900&family=Inter:wght@400;700;900&&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=Lora:ital@0;1&family=Work+Sans:wght@400;700;900&family=Inter:wght@400;700;900&&display=swap");
 
 :root {
-  --primary: #f4743b;
+  --primary: #4BBF8E;
   --white: #f2f3d9;
   --black: #272727;
 
@@ -18,7 +18,7 @@ body {
   background-color: var(--black);
   color: var(--white);
   font-size: var(--base);
-  font-family: "Work Sans","Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Lora", sans-serif;
   font-weight: 400;
   line-height: 1.4;
   overflow-x: hidden;
@@ -34,8 +34,8 @@ h6 {
   line-height: 1.2;
   margin-top: var(--chasm);
   margin-bottom: var(--base);
-  /* font-weight: bold;
-  font-family: "Work Sans"; */
+  font-weight: bold;
+  font-family: "Work Sans";
 }
 
 h1 {
