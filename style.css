@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Work+Sans:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=Lora:ital@0;1&family=Work+Sans:wght@400;700;900&family=Inter:wght@400;700;900&&display=swap");
 
 :root {
-  --primary: #4bbf8e;
-  --white: #feffff;
-  --dark: #676767;
-  --black: #161616;
+  --primary: #4BBF8E;
+  --white: #f2f3d9;
+  --black: #272727;
 
   --base: 15pt;
   --chasm: 25pt;
@@ -12,14 +11,15 @@
   --across: 1000px;
   --spacer: 3px;
 
-  --snappy: 0.15s ease-out;
+  --snappy: 0.25s ease-in-out;
 }
 
 body {
   background-color: var(--black);
   color: var(--white);
   font-size: var(--base);
-  font-family: "DM Serif Text";
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
   line-height: 1.4;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -145,7 +145,7 @@ thead {
 }
 
 tr {
-  border-top: var(--spacer) solid var(--dark);
+  border-top: var(--spacer) solid var(--black);
 }
 
 thead tr {
@@ -219,15 +219,22 @@ strong {
   color: var(--black);
   border-radius: var(--spacer);
   display: inline-block;
-  transition: color var(--snappy), background-color var(--snappy);
+  transition: color var(--snappy), background-color var(--snappy), border var(--snappy);
 }
 
 .button:hover {
+  /* border: 5px var(--black) solid; */
   color: var(--primary);
   background-color: var(--black);
+  
 }
 
 .inline {
   vertical-align: -15%;
   height: 1em;
+}
+
+.inline:hover {
+  color: inherit;
+  filter: none;
 }
