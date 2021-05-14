@@ -47,7 +47,7 @@ main() {
     printf "Would you like to proceed with the installation? (y/N)\n\n"
     read -p ">   " -n 1 -r
     printf "\n\n"
-    if [[ ! $REPLY =~ ^[Yy]$ ]]
+    if ! (echo "$REPLY" | grep -q "y\|Y")
     then
         printf "Installation aborted.\n\n"
         return 1
