@@ -45,7 +45,8 @@ main() {
     # printf "\'aspen uninstall\' and these changes will be reverted.\n\n"
 
     printf "Would you like to proceed with the installation? (y/N)\n\n"
-    read -p ">   " -n 1 -r
+    printf ">   "
+    read -r
     printf "\n\n"
     if ! (echo "$REPLY" | grep -q "y\|Y")
     then
@@ -141,7 +142,7 @@ update() {
 
 build() {
     printf "    Building $1...\n\n"
-    cargo build --manifest-path "$ASPEN_HOME/$2/Cargo.toml" --release --color never || return 1
+    cargo build --manifest-path "$ASPEN_HOME/$2/Cargo.toml" --release || return 1
     printf "\n"
 
     printf "    Installing $1... "
