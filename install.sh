@@ -46,7 +46,7 @@ main() {
 
     printf "Would you like to proceed with the installation? (y/N)\n\n"
     printf ">   "
-    read -r
+    read -r REPLY
     printf "\n\n"
     if ! (echo "$REPLY" | grep -q "y\|Y")
     then
