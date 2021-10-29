@@ -1,17 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=Lora:ital@0;1&family=Work+Sans:wght@400;700;900&family=Inter:wght@400;700;900&&display=swap");
 
 :root {
-  --primary: #4BBF8E;
-  --white: #f2f3d9;
-  --black: #272727;
-
-  --base: 15pt;
-  --chasm: 25pt;
-
-  --across: 1000px;
-  --spacer: 3px;
-
-  --snappy: 0.25s ease-in-out;
+    --primary: #7CCFAC;
+    --white: #FFFAF7;
+    --black: #0E0033;
+    --base: 15pt;
+    --chasm: 25pt;
+    --across: 1000px;
+    --spacer: 3px;
+    --snappy: 0.25s ease-in-out;
 }
 
 body {
